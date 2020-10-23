@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>UN MATIN COMME LES AUTRE</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        
+         ::selection {
+            background-color: #EB5A52;
+            color: white;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .container h1 {
+            margin: auto;
+            margin-top: 3%;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+        
+        .buttonsContainer {
+            margin: auto;
+            margin-bottom: 0.1%;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+        }
+        
+        .buttonsContainer a,
+        .buttonsContainer button {
+            margin: auto;
+            margin-bottom: 2%;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            padding: 10px 50px;
+            border-radius: 25px;
+            border: none;
+            background-color: #249e70;
+            box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+        
+        .buttonsContainer button:focus {
+            outline: none;
+        }
+        
+        .buttonsContainer a:hover,
+        .buttonsContainer button:hover {
+            color: #3a6d57;
+            background-color: #249e70;
+        }
+    </style>
+</head>
+
+<body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-  </body>
+</body>
+
 </html>
